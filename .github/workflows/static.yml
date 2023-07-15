@@ -51,8 +51,9 @@ jobs:
           
       - name: Publish gh-pages
         run: |
+          ls
           cd docs
-
+          
           echo "::debug::Add new files to git"
           git fetch
           git add .
