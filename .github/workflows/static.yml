@@ -44,12 +44,10 @@ jobs:
             
       - name: Build artifacts
         run: |
-           ls
            cd WebAppTemplate/website
-           ls
            echo "::debug::Install npm packages"
-           #npm install 
-           #npm run build
+           npm install 
+           npm run build
            ls
           
       - name: Publish gh-pages
