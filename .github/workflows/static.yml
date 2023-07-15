@@ -30,19 +30,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update submodules
-        run: |      
-          git clone -b release/documentation --single-branch --depth 1 https://github.com/veracity-engineering/SolutionPackageDoc.wiki.git docs/_site
-          git clone -b master --single-branch --depth 1 https://git:${{ secrets.SRC_TOKEN }}@github.com/veracity-engineering/WebAppTemplateDoc.git src
+        run: |  
+          git clone -b master --single-branch --depth 1 --depth 1 https://github.com/veracity-engineering/WebAppTemplateDoc.git docs/articles
+
+          git clone -b release/documentation --single-branch --depth 1 https://git:${{ secrets.SRC_TOKEN }}@github.com/veracity-engineering/WebAppTemplate.git website
+          
+          git clone -b gh-pages --single-branch --depth 1 --depth 1 https://github.com/veracity-engineering/WebAppTemplateDoc.git docs/_site
 
       - name: Use Node
         uses: actions/setup-node@v3
         with:
             node-version: '14.x'
       - name: Install dependencies
-        run: npm install 
+        run: |
+           echo "::debug::Install npm packages"
+           npm install 
           
       - name: Build artifacts
-        run: npm run build
+        run: |
+           echo "::debug::Start building"
+           npm run build
        
       - name: Publish gh-pages
         run: |
