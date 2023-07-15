@@ -46,7 +46,7 @@ jobs:
         run: |
            cd WebAppTemplate/website
            echo "::debug::Install npm packages"
-           npm ci 
+           npm install --force
            npm run build
           
       - name: Publish gh-pages
