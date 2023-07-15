@@ -38,7 +38,9 @@ jobs:
           #git clone -b gh-pages --single-branch --depth 1 --depth 1 https://github.com/veracity-engineering/WebAppTemplateDoc.git docs/_site
   
       - name: List all the files
-        run: ls ${{ github.workspace }}
+        run: |
+            cd src
+            ls ${{ github.workspace }}
      
       - name: Use Node
         uses: actions/setup-node@v3
