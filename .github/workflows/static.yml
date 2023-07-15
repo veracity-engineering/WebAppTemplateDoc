@@ -33,13 +33,13 @@ jobs:
         run: |  
           #git clone -b master --single-branch --depth 1 --depth 1 https://github.com/veracity-engineering/WebAppTemplateDoc.git docs/articles
 
-          git clone -b release/documentation --single-branch --depth 1 https://git:${{ secrets.SRC_TOKEN }}@github.com/veracity-engineering/WebAppTemplate.git src
+          git clone -b release/documentation --single-branch --depth 1 https://git:${{ secrets.SRC_TOKEN }}@github.com/veracity-engineering/WebAppTemplate.git
           
           #git clone -b gh-pages --single-branch --depth 1 --depth 1 https://github.com/veracity-engineering/WebAppTemplateDoc.git docs/_site
   
       - name: List all the files
         run: |
-            cd "src"
+            #cd "src"
             ls ${{ github.workspace }}
      
       - name: Use Node
