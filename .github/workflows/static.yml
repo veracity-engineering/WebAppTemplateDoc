@@ -40,10 +40,8 @@ jobs:
       - name: List all the files
         run: |
             #cd "WebAppTemplateDoc" ${{ github.workspace }}
-             echo "::debug::Current folder"
-             ls
-             cd ..
-             echo "::debug::changed folder"
+             ls 
+             cd WebAppTemplate
              ls
      
       - name: Use Node
