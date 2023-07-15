@@ -49,7 +49,7 @@ jobs:
       - name: Build artifacts
         run: |
            echo "::debug::Start building"
-           cd src
+           cd src/website
            npm run build
        
       - name: Publish gh-pages
