@@ -46,13 +46,12 @@ jobs:
         run: |
            cd WebAppTemplate/website
            echo "::debug::Install npm packages"
-           npm install 
+           npm ci 
            npm run build
-           ls
           
       - name: Publish gh-pages
         run: |
-          cd docs/articles
+          cd docs
 
           echo "::debug::Add new files to git"
           git fetch
