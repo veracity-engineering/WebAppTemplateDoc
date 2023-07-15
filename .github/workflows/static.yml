@@ -52,7 +52,7 @@ jobs:
       - name: Publish gh-pages
         run: |
           ls
-          cd docs
+          cd WebAppTemplate/website/docs
           
           echo "::debug::Add new files to git"
           git fetch
