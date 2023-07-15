@@ -51,8 +51,9 @@ jobs:
           
       - name: Publish gh-pages
         run: |
-          ls
+         
           cd WebAppTemplate/website/docs
+          ls
           
           echo "::debug::Add new files to git"
           git fetch
@@ -64,4 +65,4 @@ jobs:
           git commit -m "Update docs" || echo "No change to commit"
 
           echo "::debug::Push commit to remote"
-          git push https://git:${{ secrets.GITHUB_TOKEN }}@github.com/veracity-engineering/WebAppTemplateDoc.git HEAD:gh-pages
+          git push https://git:${{ secrets.SRC_TOKEN }}@github.com/veracity-engineering/WebAppTemplateDoc.git HEAD:gh-pages
