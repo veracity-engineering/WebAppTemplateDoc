@@ -41,18 +41,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
             node-version: '14.x'
-      - name: Install dependencies
+      - name: Build artifacts
         run: |
+           cd website
            ls
            echo "::debug::Install npm packages"
            npm install 
-          
-      - name: Build artifacts
-        run: |
-           echo "::debug::Start building"
-           cd src/website
            npm run build
-       
+           ls
+          
       - name: Publish gh-pages
         run: |
           cd docs/articles
