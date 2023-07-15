@@ -41,7 +41,7 @@ jobs:
         run: |
             #cd "WebAppTemplateDoc" ${{ github.workspace }}
              ls 
-             cd WebAppTemplate
+             cd WebAppTemplate/website
              ls
      
       - name: Use Node
