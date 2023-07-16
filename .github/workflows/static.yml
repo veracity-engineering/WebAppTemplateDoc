@@ -44,6 +44,7 @@ jobs:
             
       - name: Build artifacts
         run: |
+           ls
            cd docs/articles/WebAppTemplate/website
            echo "::debug::Install npm packages"
            npm install --force
