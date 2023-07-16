@@ -58,6 +58,7 @@ jobs:
           cp -R docs/articles/website/docs docs/_site
       
       - name: Push to branch
+        run: |
           cd docs/_site
           echo "::debug::Add new files to git"
           git fetch
