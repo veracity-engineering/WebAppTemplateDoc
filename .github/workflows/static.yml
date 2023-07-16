@@ -55,8 +55,10 @@ jobs:
            npm run build  
       - name: Moving files
         run: |
-          cp -r docs/articles/website docs/_site/
+          cp -r docs/articles/website docs/_site
           cd docs/_site
+          ls
+          cd docs/_site/website
           ls
          
 #       - name: Publish pages
