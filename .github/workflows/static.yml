@@ -45,30 +45,30 @@ jobs:
       - name: Check files
         run: |
            ls
-           cd docs/articles
+           cd docs/articles/website
            ls
             
-#       - name: Build artifacts
-#         run: |
-#            ls
-#            cd docs/articles/WebAppTemplate/website
-#            echo "::debug::Install npm packages"
-#            npm install --force
-#            npm run build
+      - name: Build artifacts
+        run: |
+           ls
+           cd docs/articles/website
+           echo "::debug::Install npm packages"
+           npm install --force
+           npm run build
           
-#       - name: Publish gh-pages
-#         run: |
+      - name: Publish gh-pages
+        run: |
          
-#           #cd docs/articles/WebAppTemplate/website/docs
-#           #ls
-#           cd docs/_site
+          #cd docs/articles/website
+          #ls
+          cd docs/_site
           
-#           echo "::debug::Add new files to git"
-#           git fetch
-#           git add .
+          echo "::debug::Add new files to git"
+          git fetch
+          git add .
 
-#           echo "::debug::Commit changes to git"
-#           git config user.email "actions-bot@users.noreply.github.com"
+          echo "::debug::Commit changes to git"
+          git config user.email "actions-bot@users.noreply.github.com"
 #           git config user.name "github actions bot"
 #           git commit -m "Update docs" || echo "No change to commit"
 
