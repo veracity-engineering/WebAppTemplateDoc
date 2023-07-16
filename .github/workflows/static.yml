@@ -53,6 +53,11 @@ jobs:
            echo "::debug::Install npm packages"
            npm install --force
            npm run build  
+      - name: Moving files
+        run: |
+          git mv docs/articles/website docs/_site
+          cd docs/_site
+          ls
          
 #       - name: Publish pages
 #         env:
