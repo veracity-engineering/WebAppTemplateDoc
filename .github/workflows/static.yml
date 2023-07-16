@@ -55,7 +55,7 @@ jobs:
            npm run build  
       - name: Moving files
         run: |
-          cp -R docs/articles/website/doc docs/_site
+          cp -R docs/articles/website/docs docs/_site
           cd docs/_site
           ls
          
