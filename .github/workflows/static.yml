@@ -58,6 +58,8 @@ jobs:
           cp -R docs/articles/website/docs docs/_site
           cd docs/_site
           ls
+          cd docs
+          ls
          
 #       - name: Publish pages
 #         env:
