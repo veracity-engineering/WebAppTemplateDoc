@@ -45,7 +45,7 @@ jobs:
       - name: Check files
         run: |
            ls
-           cd docs
+           cd docs/articles
            ls
             
 #       - name: Build artifacts
