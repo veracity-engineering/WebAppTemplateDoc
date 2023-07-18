@@ -52,7 +52,7 @@ jobs:
            cd docs/articles/website
            echo "::debug::Install npm packages"
            npm install --force
-           npm run build-git  
+           npm run build-git
       - name: Moving files
         run: |
           cp -R docs/articles/website/build/* docs/_site/
