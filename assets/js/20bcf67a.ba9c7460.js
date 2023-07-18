@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[2212],{3337:e=>{e.exports=JSON.parse('{"permalink":"/https://veracity-engineering.github.io/WebAppTemplateDoc/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
