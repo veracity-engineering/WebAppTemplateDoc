@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[7893],{2048:e=>{e.exports=JSON.parse('[{"label":"hello","permalink":"/https://veracity-engineering.github.io/WebAppTemplateDoc/blog/tags/hello","count":1},{"label":"docusaurus","permalink":"/https://veracity-engineering.github.io/WebAppTemplateDoc/blog/tags/docusaurus","count":1}]')}}]);
